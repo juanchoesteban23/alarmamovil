@@ -4,6 +4,6 @@ export const theme = {
         title: 'white',
         primary: '#FFD1A7',
         secondary: '#FFF5F5'
-
-    }
+    }    
 }
+
