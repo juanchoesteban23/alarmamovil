@@ -4,10 +4,11 @@ import { Link } from "react-router-native";
 import globalstyle from "../styles.js";
 import { SvgHome } from "./SvgHome.jsx";
 import { SvgPencil } from "./SvgPencil.jsx";
+import { ScrollView } from "react-native";
 
 function CreateRutina() {
   return (
-    <View style={globalstyle.pantalla}>
+    <ScrollView>
       <Text style={globalstyle.texttitle}>Crear rutina </Text>
       <View style={styles.contsesion}>
         <Text style={styles.txtdescripcion}>Nombre</Text>
@@ -71,19 +72,20 @@ function CreateRutina() {
           <Text style={styles.textbutton}>Cancelar</Text>
         </Link>
       </View>
-      <SvgHome r={10} b={-90} />
-    </View>
+      <View style={globalstyle.btnhome}>
+        <SvgHome b={5} />
+      </View>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   contsesion: {
     backgroundColor: theme.colors.secondary,
-    // height: 314,
     borderRadius: 16,
-    marginTop: 10,
+    marginTop: 30,
     padding: 20,
-    width: '95%'
+    // marginHorizontal: 20,
   },
   txtedit: {
     fontSize: 18,
@@ -93,7 +95,7 @@ const styles = StyleSheet.create({
     marginVertical: 3,
   },
   txtdescripcion: {
-    fontSize: 20,   
+    fontSize: 20,
   },
   btnsave: {
     borderRadius: 16,
@@ -116,10 +118,11 @@ const styles = StyleSheet.create({
     fontSize: 25,
   },
   cuadrobtns: {
-    marginTop: 20,
+    marginVertical: 20,
     flexDirection: "row",
     alignContent: "center",
     justifyContent: "space-between",
+    // marginHorizontal: 20,
   },
 });
 

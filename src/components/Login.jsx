@@ -1,17 +1,12 @@
-import {  
-  StyleSheet,
-  Text,
-  TextInput, 
-  View,
-} from "react-native";
+import { ScrollView, StyleSheet, Text, TextInput, View } from "react-native";
 import { theme } from "../theme.js";
 import { Link } from "react-router-native";
-import globalstyle from '../styles.js'
+import globalstyle from "../styles.js";
 import { SvgHuella } from "./SvgHuella.jsx";
 
 function Login() {
   return (
-    <View style={globalstyle.pantalla}>
+    <ScrollView>
       <Text style={globalstyle.texttitle}>Iniciar Sesión</Text>
       <View style={styles.contsesion}>
         <Text style={styles.textsub}>Correo</Text>
@@ -31,20 +26,20 @@ function Login() {
         />
       </View>
 
-      <Link to="/home" style={styles.button} underlayColor='#FFE8D3'>
+      <Link to="/home" style={styles.button} underlayColor="#FFE8D3">
         <Text style={styles.textbutton}>Iniciar Sesion</Text>
       </Link>
 
-      <Link to="/" underlayColor='rgb(255 255 255 / 13%)'>
+      <Link to="/" underlayColor="rgb(255 255 255 / 13%)">
         <View style={styles.cuadrohuella}>
           <SvgHuella />
           <Text style={styles.texthuella}>Ingresar con huella</Text>
         </View>
       </Link>
-    </View>
+    </ScrollView>
   );
 }
-const styles = StyleSheet.create({  
+const styles = StyleSheet.create({
   contsesion: {
     backgroundColor: theme.colors.secondary,
     // width: "100vw",
@@ -76,13 +71,12 @@ const styles = StyleSheet.create({
     fontSize: 25,
   },
   cuadrohuella: {
-    marginTop: 50,
-    height: 70,
+    marginVertical: 30,
     alignItems: "center",
     justifyContent: "center",
   },
   texthuella: {
-    marginTop: 20,
+    marginVertical: 10,
     fontSize: 20,
     color: theme.colors.title,
   },

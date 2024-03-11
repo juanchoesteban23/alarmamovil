@@ -14,7 +14,7 @@ const xml = `<svg xmlns="http://www.w3.org/2000/svg" width="144" height="144" vi
 
 export function SvgHuella() {
   return (
-    <SvgXml xml={xml} width="100%" height="100%" />
+    <SvgXml xml={xml} width="100px" height="100px" />
   )
 }
 

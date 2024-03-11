@@ -15,6 +15,6 @@ const xml = `<svg xmlns="http://www.w3.org/2000/svg" width="111" height="111" vi
 
 export function SvgPlus() {
     return (
-      <SvgXml xml={xml} width="100%" height="100%" />
+      <SvgXml xml={xml} width="100px" height="100px" />
     )
   }

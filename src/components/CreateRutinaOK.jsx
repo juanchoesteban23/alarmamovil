@@ -22,8 +22,8 @@ function CreateRutinaOK() {
 
 const styles = StyleSheet.create({
   textbutton: {
-    fontSize: 25,
-    fontWeight: "600",
+    fontSize: 26,
+    textAlign: "center"
   },
   overlay: {
     position: "absolute",
@@ -34,16 +34,14 @@ const styles = StyleSheet.create({
     zIndex: 1,
     backgroundColor: "black",
     opacity: 0.3,
-    paddingHorizontal: 20,
-    paddingVertical: 10,
+    paddingHorizontal:30   
   },
   contok: {
     padding: 30,
     borderRadius: 16,
     zIndex: 2,
-    position: "absolute",
-    top: "40%",
-    width: "90%",
+    // position: "absolute",
+    top: "38%",
     backgroundColor: theme.colors.secondary,
     alignItems: 'center'
   },

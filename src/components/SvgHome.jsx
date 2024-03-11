@@ -21,10 +21,11 @@ export function SvgHome({r,b}) {
       to="/"
       style={{
         borderRadius: 40,
-        position: "absolute",
+        // position: "absolute",
         backgroundColor: "#E4EFFF",
-        right: r,
-        bottom: b,
+        // right: r,
+        bottom: r,
+        zIndex: 10
       }}
       activeOpacity={0.5} underlayColor='#FFF5F5'
     >
