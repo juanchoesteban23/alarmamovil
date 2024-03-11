@@ -3,7 +3,7 @@ import { theme } from "./theme.js";
 
 export default globalstyle = StyleSheet.create({
     pantalla: {
-        marginTop: 30,
+        marginTop: 10,
     },
     texttitle: {
         fontSize: 50,

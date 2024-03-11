@@ -3,7 +3,8 @@ export const theme = {
         bg: '#001749',
         title: 'white',
         primary: '#FFD1A7',
-        secondary: '#FFF5F5'
+        secondary: '#FFF5F5',
+        tertiary:'#FFE8D3'
     }    
 }
 

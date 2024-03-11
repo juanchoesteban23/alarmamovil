@@ -1,8 +1,11 @@
-import { Button, StyleSheet, Text, TextInput, Touchable, TouchableOpacity, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { Route, Routes } from 'react-router-native';
 import Login from './Login';
 import {theme} from '../theme.js'
 import Home from './Home.jsx';
+import CreateRutina from './CreateRutina.jsx';
+import CreateRutinaOK from './CreateRutinaOK.jsx';
+import Constanst from 'expo-constants'
 
 
 function Main() {
@@ -11,7 +14,8 @@ function Main() {
         <Routes>
             <Route path='/' element={<Login />} />
             <Route path='/home' element={<Home />} />
-            {/* <Route path='/listarutinas' element={} /> */}
+            <Route path='/crearrutina' element={<CreateRutina />} />
+            <Route path='/crearrutinaOK' element={<CreateRutinaOK />} />
        </Routes>
        
     </View>
@@ -23,10 +27,11 @@ const styles = StyleSheet.create({
       flex: 1,
       backgroundColor: theme.colors.bg,
       alignItems: "center",
-      padding: 20,
+      padding: 10,
+      marginTop:Constanst.statusBarHeight
     },
     pantalla: {
-      marginTop: 30,
+      marginTop: 10,
     },})
 
 export default Main

@@ -1,16 +1,13 @@
-import {
-  Button,
+import {  
   StyleSheet,
   Text,
-  TextInput,
-  Touchable,
-  TouchableOpacity,
+  TextInput, 
   View,
 } from "react-native";
 import { theme } from "../theme.js";
 import { Link } from "react-router-native";
-import { SvgHuella } from "./SvgHuella.jsx";
 import globalstyle from '../styles.js'
+import { SvgHuella } from "./SvgHuella.jsx";
 
 function Login() {
   return (
@@ -34,11 +31,11 @@ function Login() {
         />
       </View>
 
-      <Link to="/home" style={styles.button}>
+      <Link to="/home" style={styles.button} underlayColor='#FFE8D3'>
         <Text style={styles.textbutton}>Iniciar Sesion</Text>
       </Link>
 
-      <Link to="/">
+      <Link to="/" underlayColor='rgb(255 255 255 / 13%)'>
         <View style={styles.cuadrohuella}>
           <SvgHuella />
           <Text style={styles.texthuella}>Ingresar con huella</Text>
@@ -50,10 +47,10 @@ function Login() {
 const styles = StyleSheet.create({  
   contsesion: {
     backgroundColor: theme.colors.secondary,
-    width: "100vw",
+    // width: "100vw",
     // height: 314,
     borderRadius: 16,
-    marginTop: 100,
+    marginTop: 60,
     padding: 20,
   },
   input: {
